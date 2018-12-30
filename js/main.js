@@ -4,6 +4,7 @@ const form = document.querySelector("#form");
 //listening for a click event on ul, if ul contains a class of delete it will delete that li element
 
 list.addEventListener("click", e => {
+  console.log(e.target);
   if (e.target.className == "delete") {
     console.log("deleted");
     const li = e.target.parentElement;
